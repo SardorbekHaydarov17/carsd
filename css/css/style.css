@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.img img {
+  width: 50px;
+  position: relative;
+}
+img {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 365px;
+  left: 0;
+  animation-name: anime;
+  animation-duration: 0.1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.box {
+  margin: 300px auto;
+  border-radius: 50%;
+  animation-name: anime;
+  width: 80px;
+  height: 80px;
+  border: 7px solid rgb(12, 57, 204);
+  border-bottom: 7px solid rgb(51, 255, 0);
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes anime {
+  to {
+    transform: rotate(360deg);
+  }
+}
